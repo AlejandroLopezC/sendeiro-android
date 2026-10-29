@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Sendeiro</string>
+    <string name="alta_titulo">Alta de ruta de senderismo</string>
+    <string name="nombre_ruta">Nombre de la ruta</string>
+    <string name="distancia">Distancia en kilómetros</string>
+    <string name="dificultad">Dificultad</string>
+    <string name="circular">Ruta circular</string>
+    <string name="descripcion">Descripción</string>
+    <string name="guardar">Guardar ruta</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="listado_titulo">Rutas de Sendeiro</string>
+    <string name="estado_cerrada">Ruta cerrada</string>
+    <string name="estado_abierta">Abierta</string>
+    <string name="vacio_rutas">Todavía no hay rutas guardadas. Añade una ruta con el formulario para verla aquí.</string>
+    <string name="error_carga">No se han podido cargar las rutas. Comprueba e inténtalo de nuevo.</string>
+    <string name="cargando">Cargando rutas…</string>
+    <string name="error_nombre">Introduce un nombre de ruta.</string>
+    <string name="error_distancia">Introduce una distancia válida mayor que cero (por ejemplo, 12.5).</string>
+    <string name="guardado">Ruta guardada.</string>
+    <string name="borrador_invalido">El borrador contiene datos no válidos. Corrígelos antes de guardar.</string>
+    <string name="permiso_ubicacion">La ubicación permite registrar dónde comienza una incidencia. Puedes seguir usando las rutas sin concederla.</string>
+    <string name="permiso_denegado">Sin permiso de ubicación, la aplicación sigue funcionando; la función de ubicación queda desactivada.</string>
+    <string name="abrir_ajustes">Abrir ajustes</string>
+    <string name="compartir">Compartir parte</string>
+    <string name="unidades">Mostrar distancias en millas</string>
+    <string name="borrar">Borrar ruta</string>
+    <string name="confirmar_borrado">¿Quieres borrar esta ruta?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="sin_manejador">No hay ninguna aplicación disponible para compartir.</string>
+    <string-array name="dificultades"><item>Fácil</item><item>Moderada</item><item>Difícil</item></string-array>
+</resources>

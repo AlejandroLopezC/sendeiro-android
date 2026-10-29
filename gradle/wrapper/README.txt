@@ -1,0 +1,1 @@
+El entorno de creación no dispone de Gradle ni del JAR oficial del wrapper. En un equipo con Gradle instalado, ejecuta `gradle wrapper --gradle-version 8.9` para crear `gradle-wrapper.jar`, `gradle-wrapper.properties` y scripts oficiales. No se ha fingido incluir un wrapper funcional.

@@ -1,0 +1,31 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/titulo" android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_margin="16dp" android:text="@string/alta_titulo" android:textSize="22sp" android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    <ScrollView android:id="@+id/scrollFormulario" android:layout_width="0dp" android:layout_height="0dp"
+        android:fillViewport="true" android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/titulo" app:layout_constraintBottom_toTopOf="@id/botones" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="12dp">
+            <EditText android:id="@+id/campoNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/nombre_ruta" android:inputType="textCapSentences" android:maxLength="80" />
+            <EditText android:id="@+id/campoDistancia" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/distancia" android:inputType="numberDecimal" android:maxLength="12" />
+            <Spinner android:id="@+id/campoDificultad" android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/dificultades" android:contentDescription="@string/dificultad" />
+            <CheckBox android:id="@+id/campoCircular" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/circular" />
+            <EditText android:id="@+id/campoDescripcion" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/descripcion" android:inputType="textCapSentences|textMultiLine" android:minLines="3" android:gravity="top" />
+            <CheckBox android:id="@+id/campoMillas" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/unidades" />
+            <Button android:id="@+id/botonPermiso" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Registrar ubicación (opcional)" />
+            <Button android:id="@+id/botonCompartir" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/compartir" />
+            <TextView android:id="@+id/estado" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:accessibilityLiveRegion="polite" />
+            <TextView android:id="@+id/subtituloListado" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/listado_titulo" android:textStyle="bold" android:textSize="18sp" android:paddingTop="12dp" />
+            <ProgressBar android:id="@+id/progreso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" />
+            <TextView android:id="@+id/estadoLista" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/listaRutas" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/botones" android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <Button android:id="@+id/botonGuardar" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:text="@string/guardar" />
+        <Button android:id="@+id/botonLimpiar" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/limpiar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
