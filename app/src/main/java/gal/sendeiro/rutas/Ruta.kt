@@ -2,6 +2,7 @@ package gal.sendeiro.rutas
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.ColumnInfo
 
 @Entity(tableName = "rutas")
 data class Ruta(
@@ -11,5 +12,7 @@ data class Ruta(
     val cerrada: Boolean,
     val dificultad: String = "Moderada",
     val circular: Boolean = false,
-    val descripcion: String = ""
+    val descripcion: String = "",
+    @ColumnInfo(defaultValue = "''")
+    val tramo: String = ""
 )

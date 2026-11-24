@@ -29,4 +29,9 @@
     <string name="aceptar">Aceptar</string>
     <string name="sin_manejador">No hay ninguna aplicación disponible para compartir.</string>
     <string-array name="dificultades"><item>Fácil</item><item>Moderada</item><item>Difícil</item></string-array>
+    <string name="registrar_ubicacion">Registrar ubicación (opcional)</string>
+    <string name="tramo">Buscar tramo</string>
+    <string name="error_tramo">Selecciona un tramo válido.</string>
+    <string name="pista_distancia">Introduce una distancia mayor que cero.</string>
+    <string name="pista_nombre">El nombre es obligatorio.</string>
 </resources>
